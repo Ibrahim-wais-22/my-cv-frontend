@@ -1,0 +1,344 @@
+html,
+body {
+  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+.home{
+  background-image: url("/public/Front-end.png");
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header{
+  position: absolute;
+}
+.imgHeader{
+  width: 100%;
+  
+}
+
+/* ------------aboutMy--------------- */
+.aboutMy{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.myphoto{
+  width: 350px;
+  position: relative;
+}
+.myName{
+  
+  width: 40%;
+  height: 30vh;
+  background-color: #FF5F58;
+  border-radius: 100px 0px 0px 300px;
+}
+.myName h1{
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: 3rem;
+  color: aliceblue;
+}
+.titlejob{
+  color: aliceblue;
+  font-size: 4rem;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 1;
+}
+
+/* -------------myWorks---------- */
+.myWorks{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;  
+  
+}
+.container{
+  width: 40%;
+  /* height: 507px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  
+
+}
+.card{
+  height: 487px;
+  background-color: #FA9917;
+  border-radius: 300px 300px 0px 0px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.card h2{
+  margin-top: 5%;
+  /* margin-bottom: 10%; */
+}
+.card img{
+  width: 100%;
+  height: 70%;
+  margin-bottom: 0px;
+  border-radius: 30px ;
+  margin-top: 20%;
+}
+.card img:hover{
+  width: 110%;
+  height: 80%;
+  border-radius: 30px ;
+   
+  transition: .8s ease;
+  
+}
+/* .card2{
+  height: 487px;
+  background-color: #FA9917;
+  border-radius: 200px 0px 0px 200px;
+  margin-right: -63px;
+  
+}
+.card3{
+  height: 487px;
+  background-color: #FA9917;
+  border-radius: 0px 200px 200px 0px;
+  margin-left: -65px;
+} */
+.btnCard {
+  background-color: #FF3366;
+  align-items: center;
+  border-radius: 0px 0px 30px 30px;
+  width: 20%;
+  height: 5vh;
+  border: 0px;
+  margin-left: 40%;
+}
+/* ----contactUs-------- */
+
+.contactUs{
+  background-color: #3399ff9c;
+  width: 60%;
+  height: 100vh;
+  border-radius: 20px;
+  margin-left: 20%;
+}
+.titleCertifucates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleCertifucates hr{
+  width: 40%;
+  margin: 5px;
+  margin-top: 20px;
+  
+}
+.hrSkills hr{
+  width: 38% !important;
+  
+}
+.titleCertifucates h3{
+  text-transform: uppercase;  
+  margin-top: 10px;
+  color: #FA9917;
+  font-size: 2rem;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  list-style: none;
+  /* list-style: square; */
+}
+li{
+  font-size: 1.5rem;
+  margin: 10px 40%;
+  
+
+}
+
+
+
+
+/* -------footer---------- */
+.footer{
+  margin-top: 20px;
+  background-color: #fa9817a8;
+  width: 100%;
+  height: 8vh;
+  border-radius: 200px 200px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ----------@media------------ */
+.contactUs,
+.myWorks,
+.container,
+.myName,
+.card2 ,.card3{
+  transition: 0.5s ease;
+}
+@media (min-width: 1200px) and (max-width: 1500px){
+  .titleCertifucates hr{
+    width: 30%;
+  }
+  .titleCertifucates h3{
+    font-size: 2rem;
+  }
+  li{
+    font-size: 1.5rem;
+    margin: 0px 40%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+  .titlejob{
+    font-size: 3rem;
+    left: 10%;
+  }
+  li{
+    font-size: 1rem;
+    margin: 0px 30%;
+  }
+  
+}
+@media (min-width: 768px) and (max-width: 991px){
+  .contactUs {
+    width: 90%;
+    height: 70vh;
+    margin-left: 5%;
+    
+  }
+  .myName{
+    width: 80%;
+  }
+  .myWorks{
+    margin-top: 40px;
+    justify-content: space-between;
+    
+  }
+  .container{
+    width: 49%;
+  }
+  .btnCard {
+
+    width: 40%;
+    height: 4vh;
+    margin-left: 30%;
+  }
+  .titleCertifucates hr{
+    width: 30%;
+  }
+  .titleCertifucates h3{
+    font-size: 1.5rem;
+  }
+  li{
+    font-size: 1rem;
+    margin: 3px 40%;
+  }
+  .titlejob{
+    font-size: 2rem;
+    left: 10%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px){
+  .contactUs {
+    width: 100%;
+    height: 80vh;
+    margin-left: 0%;
+    
+  }
+  .myWorks{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 100%;
+  }
+  .myName{
+    width: 99%;
+  }
+  .card2 ,.card3{
+    border-radius: 300px 300px 0px 0px;
+    margin: 0px 5px;
+    height: 387px;
+  }
+  .card{
+    margin: 0px 5px;
+    height: 487px;
+  }
+  .card img{
+    width: 85%;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+  }
+  .titleCertifucates hr{
+    width: 30%;
+  }
+  .titleCertifucates h3{
+    font-size: 1.5rem;
+  }
+  li{
+    font-size: 1rem;
+    margin: 3px 40%;
+  }
+  .titlejob{
+    font-size: 2rem;
+    left: 10%;
+  }
+
+}
+
+@media (max-width: 575px){
+  .contactUs {
+    width: 100%;
+    height: 80vh;
+    margin-left: 0%;
+    
+  }
+  .myWorks{
+    display: flex;
+    flex-direction: column;
+  }
+  .container{
+    width: 100%;
+  }
+  .myName{
+    width: 99%;
+  }
+ 
+  .card{
+    margin: 0px 5px;
+    height: 387px;
+  }
+  .card img{
+    width: 85%;
+    margin-bottom: 20px;
+    transition: 0.5s ease;
+  }
+  .titleCertifucates hr{
+    width: 30%;
+  }
+  .titleCertifucates h3{
+    font-size: 1.5rem;
+  }
+  li{
+    font-size: 1rem;
+    margin: 3px 40%;
+  }
+  .titlejob{
+    font-size: 1.5rem;
+    left: 10%;
+  }
+}
