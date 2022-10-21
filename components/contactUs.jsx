@@ -1,3 +1,4 @@
+import Image from 'next/image'
 function ContactUs() {
     return (
         <div className="contactUs">
@@ -38,10 +39,42 @@ function ContactUs() {
             <div className="logos">
 
                
-                <a href="https://github.com/Ibrahim-wais-22"><img src="/logo-github.svg" alt="" className="imgContact"/></a>
-                <a href="https://www.facebook.com/ibrahim.wais.1401"><img src="/logo-facebook.svg" alt=""  className="imgContact"/></a>
-                <a href=""><img src="/logo-linkedin.svg" alt=""  className="imgContact"/></a>
-                <a href="https://twitter.com/Ibrahimibra22"><img src="/logo-twitter.svg" alt="" className="imgContact" /></a>
+                <a href="https://github.com/Ibrahim-wais-22">
+                <Image
+                    src="/logo-github.svg"
+                    alt="Landscape picture"
+                    width={50}
+                    height={50}
+                />
+                    {/* <img src="/logo-github.svg" alt="" className="imgContact"/> */}
+                    </a>
+                <a href="https://www.facebook.com/ibrahim.wais.1401">
+                <Image
+                    src="/logo-facebook.svg"
+                    alt="Landscape picture"
+                    width={50}
+                    height={50}
+                />
+                    {/* <img src="/logo-facebook.svg" alt=""  className="imgContact"/> */}
+                    </a>
+                <a href="">
+                <Image
+                    src="/logo-linkedin.svg"
+                    alt="Landscape picture"
+                    width={50}
+                    height={50}
+                />
+                    {/* <img src="/logo-linkedin.svg" alt=""  className="imgContact"/> */}
+                    </a>
+                <a href="https://twitter.com/Ibrahimibra22">
+                <Image
+                    src="/logo-twitter.svg"
+                    alt="Landscape picture"
+                    width={50}
+                    height={50}
+                />
+                    {/* <img src="/logo-twitter.svg" alt="" className="imgContact" /> */}
+                    </a>
                 {/* <a href=""><img src="logo-instagram.svg" alt=""  className="imgContact"/></a> */}
             </div>
                 
