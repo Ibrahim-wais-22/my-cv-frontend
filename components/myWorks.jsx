@@ -4,9 +4,8 @@ function MyWorks() {
     return (
         
         <div className="myWorks">
-            <div className="container"><div className="card"> <a href="https://ibrahim-wais.herokuapp.com/" ><Image src="/boge site.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
-            <div className="container"><div className="card"> <a href="https://ibrahim-wais.herokuapp.com/" ><img src="/3.png" alt="" /></a></div></div>
-            <div className="container"><div className="card"> <a href="https://ibrahim-wais-22.github.io/trainig-today-7/" ><Image src="/phone shope.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
+            <div className="container"><div className="card"> <a href="https://ibrahim-wais.herokuapp.com/" ><Image src="/bogeSite.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
+            <div className="container"><div className="card"> <a href="https://ibrahim-wais-22.github.io/trainig-today-7/" ><Image src="/phoneShope.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
             <div className="container"><div className="card"><a href="https://ibrahim-wais-22.github.io/traning-day-6/"   ><Image src="/3.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
             <div className="container"><div className="card"> <a href="https://ibrahim-wais-22.github.io/trainig-today-5/" ><Image src="/4.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
             <div className="container"><div className="card"> <a href="https://ibrahim-wais-22.github.io/front-end/#" ><Image src="/5.png"alt="Landscape picture" width={550} height={300}/></a></div></div>
