@@ -5,7 +5,8 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 .home{
-  background-image: url("/public/Front-end.png");
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(167,81,172,1) 45%, rgba(252,70,107,0.9500175070028011) 100%);
 }
 
 
@@ -69,50 +70,34 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 20px;
-  
+
 
 }
 .card{
-  height: 487px;
+  height: 357px;
   background-color: #FA9917;
-  border-radius: 300px 300px 0px 0px; 
+  border-radius: 200px 200px 0px 0px; 
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  box-shadow: -1px 10px 41px -5px rgba(0,0,0,0.8);
+-webkit-box-shadow: -1px 10px 41px -5px rgba(0,0,0,0.8);
+-moz-box-shadow: -1px 10px 41px -5px rgba(0,0,0,0.8);
 }
 .card h2{
-  margin-top: 5%;
-  /* margin-bottom: 10%; */
+  /* margin-top: 5%; */
+  margin-bottom: 7%;
 }
 .card img{
   width: 100%;
-  height: 70%;
+  height: 100%;
   margin-bottom: 0px;
-  border-radius: 30px ;
-  margin-top: 20%;
+  border-radius: 30px 30px 0px 0px ;
+ 
 }
-.card img:hover{
-  width: 110%;
-  height: 80%;
-  border-radius: 30px ;
-   
-  transition: .8s ease;
-  
-}
-/* .card2{
-  height: 487px;
-  background-color: #FA9917;
-  border-radius: 200px 0px 0px 200px;
-  margin-right: -63px;
-  
-}
-.card3{
-  height: 487px;
-  background-color: #FA9917;
-  border-radius: 0px 200px 200px 0px;
-  margin-left: -65px;
-} */
+
+
 .btnCard {
   background-color: #FF3366;
   align-items: center;
@@ -127,14 +112,18 @@ body {
 .contactUs{
   background-color: #3399ff9c;
   width: 60%;
-  height: 100vh;
+  height: 82vh;
   border-radius: 20px;
   margin-left: 20%;
+  box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.8);
+-webkit-box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.8);
+-moz-box-shadow: -1px 10px 19px -5px rgba(0,0,0,0.8);
 }
 .titleCertifucates{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .titleCertifucates hr{
   width: 40%;
@@ -149,27 +138,54 @@ body {
 .titleCertifucates h3{
   text-transform: uppercase;  
   margin-top: 10px;
-  color: #FA9917;
+  color: #fff;
   font-size: 2rem;
+}
+.contactUs h2{
+  text-align:center;
+}
+.skillList{
+  display:flex;
+  justify-content: space-around;
+  /* color: #d4a373; */
+
+}
+.skillList1{
+  display:flex;
+  flex-direction: column;
+  margin-left: 100px;
+}
+.skillList2{
+  display:flex;
+  flex-direction: column;
+  margin-right: 100px;
 }
 
 ul{
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
-  list-style: none;
-  /* list-style: square; */
-}
-li{
-  font-size: 1.5rem;
-  margin: 10px 40%;
   
-
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  
+}
+.imgContact{
+  width: 5%;
+}
+p{
+  text-align: center;
+}
+.pEmal{
+  margin-top: 10px;
+  
 }
 
-
-
+.logos{
+  width: 100%;
+  margin-left: 40%;
+  margin-top: 20px;
+}
 
 /* -------footer---------- */
 .footer{
@@ -200,6 +216,18 @@ li{
   li{
     font-size: 1.5rem;
     margin: 0px 40%;
+  }
+  .card{
+    height: 357px;
+    margin-bottom:50px;
+  }
+  .card img{
+    width:100%;
+    border-radius:90px 90px 0px 0px;
+    height:115% ;
+  }
+  .card h2{
+    margin-bottom:0px;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px){
@@ -269,18 +297,18 @@ li{
   .myName{
     width: 99%;
   }
-  .card2 ,.card3{
-    border-radius: 300px 300px 0px 0px;
-    margin: 0px 5px;
-    height: 387px;
-  }
+
   .card{
     margin: 0px 5px;
-    height: 487px;
+    height: 287px;
+    
+  }
+  .card h2{
+    margin-bottom:0px;
   }
   .card img{
     width: 85%;
-    margin-bottom: 20px;
+    margin-left: 15px;
     transition: 0.5s ease;
   }
   .titleCertifucates hr{
@@ -294,8 +322,14 @@ li{
     margin: 3px 40%;
   }
   .titlejob{
-    font-size: 2rem;
+    font-size: 3rem;
     left: 10%;
+  }
+  .myName h1{
+    font-size:4.5rem;
+  }
+  .myphoto{
+    width:250px ;
   }
 
 }
@@ -320,25 +354,32 @@ li{
  
   .card{
     margin: 0px 5px;
-    height: 387px;
+    height: 287px;
   }
   .card img{
-    width: 85%;
-    margin-bottom: 20px;
+    width:90%;
+    margin-left: 15px;
     transition: 0.5s ease;
   }
+  
   .titleCertifucates hr{
     width: 30%;
   }
   .titleCertifucates h3{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   li{
     font-size: 1rem;
     margin: 3px 40%;
   }
   .titlejob{
-    font-size: 1.5rem;
-    left: 10%;
+    font-size: 1.8rem;
+    left: 8%;
+  }
+  .myName h1{
+    font-size:2.5rem;
+  }
+  .myphoto{
+    width:200px ;
   }
 }
