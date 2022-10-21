@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next/image';
 function ContactUs() {
     return (
         <div className="contactUs">
